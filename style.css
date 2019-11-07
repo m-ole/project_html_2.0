@@ -350,10 +350,11 @@ letter-spacing: 2px;
 color: #757575;
 }
 
+
 /*End block info styles*/
 
-/*Clients styles*/
 
+/*Clients styles*/
 .clients {
     display: flex;
     flex-wrap: wrap;
