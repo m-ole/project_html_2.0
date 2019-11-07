@@ -145,7 +145,7 @@ li {
     text-transform: uppercase;
     color: #555656;
     font-size: 12px;
-    font-family: "Tahoma";
+    font-family: 'tahoma';
     padding-top: 40px;
 }
 
@@ -176,17 +176,11 @@ li {
 
 .banners__description {
     border-top: 1px solid black;
-    margin: 5px 0 0 0;
+    margin: 0;
     padding-top: 15px;
     color: #3c3c3c;
-    font-family: "Helvetica";
+    font-family: Helvetica;
 }
-
-.banners__wrap {
-    position: relative;
-
-}
-
 
 .banners__overlay {
     position: absolute;
@@ -196,27 +190,30 @@ li {
     padding: 15px;
 }
 
-.banners__overlayText, 
-.banners__overlayWeightText {
-    font-family: "Novecentowide";
-    text-transform: uppercase;
+.banners__wrap {
+    position: relative;
 }
 
-.banners__overlayText {
-    font-weight: 100;
+.banners_overlayWeightText, .banners_overlayText {
+font-family: 'Novecentowide';
+text-transform: uppercase;
+}
+
+.banners_overlayWeightText {
+font-size: 40px;
+margin: 10px 0 0 0;
+}
+
+.banners_overlayText {
+    font-weight: normal;
     font-size: 26px;
     margin: 0;
-} 
-
-.banners__overlayWeightText {
-    font-size: 40px;
-    margin: 10px 0 0 0;
 }
-
-.morelinkall {
+   
+.moreLink {
     margin-left: auto;
-    width: 62px;
-    color:white;
+    width: 65px;
+    color: white;
     background: black;
     text-align: center;
     display: flex;
@@ -225,7 +222,7 @@ li {
 
 .moreLink__arrow {
     border-left: 1px solid white;
-    padding: 2px 0 2px 5px;
+    padding: 2px 0 2px 5px; 
     font-size: 18px;
     font-weight: 600;
 }
@@ -233,11 +230,11 @@ li {
 .moreLink__text {
     padding: 2px 5px;
     display: block;
-}
+} 
 
 /*End banners styles*/
 
-/*Info styles*/
+/*Block info styles*/
 
 .info {
     display: flex;
@@ -245,27 +242,19 @@ li {
     justify-content: center;
 }
 
-.info__contacts, .info__about, 
-.info__news {
-    width: 33.33%;
+.info__contacts, .info__about, .info__news {
+width: 33.33%;
 }
 
 .info__about {
-    border-right: 1px solid #cccccc;
-    border-left: 1px solid #cccccc;
-    padding: 0 35px;
-    font-size: 16px;
-    line-height: 23px;
-    color: #3c3c3c;
-    font-family: "Helvetica CE";
-}
-
-.info__title {
-    margin: 0 0 35px 0;
-    color: #565656;
-    font-family: "Helvetica";
-    text-transform: uppercase;
-    font-size: 20px;
+border-right: 1px solid #cccccc;
+border-left: 1px solid #cccccc;
+padding: 0 35px;
+width: 271px;
+font-size: 16px;
+line-height: 23px;
+color: #3c3c3c;
+font-family: "Helvetica CE";
 }
 
 .info__contacts {
@@ -276,6 +265,14 @@ li {
     padding-right: 10px;
 }
 
+.info__title {
+    margin: 0 0 35px 0;
+    color: #565656;
+    font-family: "Helvetica";
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
 .info__chapter {
     font-size: 16px;
     color: #565656;
@@ -284,18 +281,18 @@ li {
 }
 
 .info__description {
-    margin: 0;
-    font-size: 14px;
-    color: #939393;
-    font-family: "Tahoma"
+font-size: 14px;
+color: #939393;
+font-family: "Tahoma";
+margin: 0;
 }
 
 .info__article {
     display: flex;
     align-items: flex-start;
     border-bottom: 1px dashed #636363;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .info__date {
@@ -304,27 +301,28 @@ li {
     margin-right: 10px;
 }
 
-.info__num {
-    font-size: 18px;
-    color: #f2ac04;
-    font-family: "Helvetica Neue LT";
-    font-weight: bold;
-    font-style: normal;
+.info__no {
+font-size: 18px;
+color: #f2ac04;
+font-family: "Helvetica Neue LT";
+font-weight: bold;
+font-style: normal;
 }
 
 .info__mon {
-    font-size: 12px;
+    font-style: normal;
+    font-size: 10px;
     color: #777777;
     font-family: "Interstate Cond Mono";
-    font-style: normal;
+    text-transform: uppercase;
 }
 
 .info__icons {
     color: #c0c0c0;
-    font-size: 30px !important;
+    font-size: 28px !important;
     width: 35px;
-    text-align: center;
     margin-right: 20px;
+    text-align: center;
 }
 
 .info__item {
@@ -336,24 +334,53 @@ li {
 }
 
 .info__item:last-child {
-    border: none;
+    border-bottom: none;
     align-items: flex-start;
 }
 
-.info__phone {
-    font-size: 16px;
-    color: #757575;
-    font-weight: bold;
+.info__phones {
+font-size: 18px;
+color: #757575;
+font-weight: bold;
 }
 
 .info__address {
-    font-size: 16px;
-    letter-spacing: 2px;
-    color: #757575;
+font-size: 16px;
+letter-spacing: 2px;
+color: #757575;
 }
-/*End info styles*/
+
+/*End block info styles*/
+
+/*Clients styles*/
+
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    padding: 25px 0;
+    margin: 60px 0 25px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.clients__title {
+    position: absolute;
+    top: -15px;
+    left: 5%;
+    margin: 0;
+    background: #fff;
+    width: 150px;
+    text-align: center;
+    font-size: 14px;
+    color: #343434;
+    font-family: "Tahoma";
+    text-transform: uppercase;
+}
 
 
+
+/*End clients styles*/
 
 @media(max-width: 1005px) {
     .container {
@@ -364,26 +391,23 @@ li {
         padding: 10px 15px;
     }
 }
+
 @media(max-width: 975px) {
     .banners__overlay {
         top: 15px;
     }
 
-    .banners__overlayWeightText{
+    .banners_overlayWeightText {
         font-size: 30px;
-    }
-    .banners__overlayText {
-        font-size: 24px;
-    }
+        }
+        
+        .banners_overlayText {
+            font-size: 24px;
+        }
+}
 
-
-
-
-@media(max-width: 810px) {
-
-    .info__contacts, 
-    .info__about, 
-    .info__news {
+@media(max-width: 830px) {
+    .info__contacts, .info__about, .info__news {
         width: 50%;
     }
 
@@ -391,10 +415,17 @@ li {
         border: none;
     }
 
-
     .info__contacts {
         margin-top: 15px;
     }
+
+    .clients {
+        margin: 0;
+    }
+
+}
+
+@media(max-width: 810px) {
 
     .container {
     padding: 15px;
@@ -422,38 +453,35 @@ li {
         padding: 10px 15px;
     }
 
-    .banners {
-        justify-content: center;
-        text-align: center;
+    .banners__left,
+    .banners__right {
+        width: 75%;    
     }
-    .banners__left, .banners__right {
-        width: 75%
+
+    .banners__left {
+    margin-bottom: 15px;
     }
 }
 
 @media(max-width: 500px) {
-
     .banners__left,
     .banners__right {
-        width: 95%;
+    width: 95%;
+    }  
+
+    .banners_overlayWeightText {
+    font-size: 24px;
     }
-    .banners__left {
-        margin-bottom: 15px;
+            
+    .banners_overlayText {
+    font-size: 18px;
     }
 
-    .banners__overlayWeightText{
-        font-size: 24px;
-    }
-    .banners__overlayText {
-        font-size: 18px;
+    .info__contacts, .info__about, .info__news {
+    width: 90%;
     }
 
-    .info__contacts, 
-    .info__about, 
-    .info__news {
-        width: 90%;
-    }
     .info__about {
-        margin-top: 15px;
+    margin-top: 15px;
     }
 }
