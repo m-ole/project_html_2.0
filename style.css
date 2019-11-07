@@ -133,6 +133,10 @@ li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #cccccc;
+    align-items: flex-start;
 }
 
 .banners__title {
@@ -216,6 +220,7 @@ li {
     background: black;
     text-align: center;
     display: flex;
+    line-height: 20px;
 }
 
 .moreLink__arrow {
@@ -232,7 +237,121 @@ li {
 
 /*End banners styles*/
 
+/*Info styles*/
 
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info__contacts, .info__about, 
+.info__news {
+    width: 33.33%;
+}
+
+.info__about {
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    padding: 0 35px;
+    font-size: 16px;
+    line-height: 23px;
+    color: #3c3c3c;
+    font-family: "Helvetica CE";
+}
+
+.info__title {
+    margin: 0 0 35px 0;
+    color: #565656;
+    font-family: "Helvetica";
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.info__contacts {
+    padding-left: 35px;
+}
+
+.info__news {
+    padding-right: 10px;
+}
+
+.info__chapter {
+    font-size: 16px;
+    color: #565656;
+    font-family: "Myriad Pro";
+    margin: 0 0 10px 0;
+}
+
+.info__description {
+    margin: 0;
+    font-size: 14px;
+    color: #939393;
+    font-family: "Tahoma"
+}
+
+.info__article {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px dashed #636363;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.info__date {
+    border-right: 1px solid #cccccc;
+    padding: 0 10px 0 3px;
+    margin-right: 10px;
+}
+
+.info__num {
+    font-size: 18px;
+    color: #f2ac04;
+    font-family: "Helvetica Neue LT";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.info__mon {
+    font-size: 12px;
+    color: #777777;
+    font-family: "Interstate Cond Mono";
+    font-style: normal;
+}
+
+.info__icons {
+    color: #c0c0c0;
+    font-size: 30px !important;
+    width: 35px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.info__item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dashed #636363;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.info__item:last-child {
+    border: none;
+    align-items: flex-start;
+}
+
+.info__phone {
+    font-size: 16px;
+    color: #757575;
+    font-weight: bold;
+}
+
+.info__address {
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #757575;
+}
+/*End info styles*/
 
 
 
@@ -261,6 +380,21 @@ li {
 
 
 @media(max-width: 810px) {
+
+    .info__contacts, 
+    .info__about, 
+    .info__news {
+        width: 50%;
+    }
+
+    .info__about {
+        border: none;
+    }
+
+
+    .info__contacts {
+        margin-top: 15px;
+    }
 
     .container {
     padding: 15px;
@@ -312,5 +446,14 @@ li {
     }
     .banners__overlayText {
         font-size: 18px;
+    }
+
+    .info__contacts, 
+    .info__about, 
+    .info__news {
+        width: 90%;
+    }
+    .info__about {
+        margin-top: 15px;
     }
 }
